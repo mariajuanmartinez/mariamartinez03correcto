@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $fuente-mediana;
+    font-weight: bolder;
+    background-color: lightgray;
+    padding: 1.2rem;
+    color: black;
+    border-radius: 8px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $fuente-mediana;
+    font-weight: bolder;
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: $fuente-chica;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*Body con variables*/
+/*Condicionales*/
+
+body {
+    @if $evento == blackfriday{
+        background-color: black;
+        color: whitesmoke;
+    } @else if $evento == hotsale{
+        background-color: orangered;
+    } @else if $evento == mundial{
+        background-color: lightblue;
+    } @else if $evento == navidad{
+        background-color: red;
+    } @else{
+        background-color: $bg-body;
+    }
+}
+
+/*EXTENDS*/
+
+.botones-general {
+    color: whitesmoke;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    font-size: $fuente-chica;
+}
+
+/*BUCLES*/
+
+@for $i from 3 through 1 {
+    .leyenda-#{$i}{
+        font-size: $fuente-xxchica * $i;
+    }
+}
+
+/*MAPA*/
+
+$redes-sociales: (
+    instagram: #953a7e,
+    facebook: #3a5795,
+    twiter: #55acee,
+    whatsapp: #3d953a,
+    sendmail: #C25E30,
+);
+
+/*Each y mapa*/
+
+@each $red-social, $color in $redes-sociales {
+    .btn--#{$red-social} {
+        background-color: $color;
+        @extend .botones-general;
+    }
+} 
+
+/*Map get*/
+
+$estilos: (
+    color: rgb(238, 51, 51),
+    alineado: center,
+    tamañofuente: $fuente-mediana,
+    tipofuente: Verdana,
+    borde: 8px,
+    color-fuente: white,
+    padding: 1rem
+);
+
+.clase-referencia {
+    @include flex-column-center;
+    background-color: map-get($estilos, color);
+    font-size: map-get($estilos, tamañofuente);
+    border-radius: map-get($estilos, borde);
+    color: map-get($estilos, color-fuente);
+    padding: map-get($estilos, padding);
+}
+

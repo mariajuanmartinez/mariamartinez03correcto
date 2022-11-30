@@ -1,0 +1,103 @@
+/**PAGINA PRODUCTOS**/
+
+#grilla_productos {
+    display: grid;
+    grid-template-areas: 
+    "header header header header header"
+    "productos productos productos productos productos"
+    "footer footer footer footer footer";
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#productos {
+    grid-area: productos;
+}
+
+
+.galeria_productos{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    justify-items: center;
+}
+
+
+@media screen and (max-width: $pantalla-grande) {
+    .galeria_productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: $pantalla-mediana) {
+    .galeria_productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: $pantalla-chica) {
+    .galeria_productos {
+        @include flex-column-center;
+        
+    }
+}
+
+.card_prod{
+    @include flex-column-center;
+    @include sizes (28rem, 38rem);
+    border-radius: 20px;
+    padding: 1.5rem;
+    background-color: white;
+    margin: calc($separacion - 9rem);
+    justify-content: center;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    img {
+    @include sizes (28rem, 18rem);
+
+    }
+}
+
+.card_titulo {
+    font-size: $fuente-mediana;
+    font-weight: bolder;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.card_precio {
+    font-size: 3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
+.card_desc {
+    font-size: $fuente-chica;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+    
+}
+
+.boton_prod {
+    @extend .botones-general;
+    background-color: crimson;
+
+    &:hover{
+        transform: scale(1.4);
+    }
+}
+
+.parrafo_tienda {
+    font-size: $fuente-grande;
+    margin-bottom: calc($separacion - 6rem);
+}

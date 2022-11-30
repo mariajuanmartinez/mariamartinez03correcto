@@ -1,0 +1,82 @@
+/**PAGINA COMO COMPRAR**/
+
+.pasos_titulo {
+    background-color: crimson;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: $fuente-mediana;
+    margin: calc($separacion - 8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    img {
+
+    @include sizes (12rem, 12rem);
+    border-radius: 10px;
+    animation-name: carritomov;
+    animation-iteration-count: infinite;
+    animation-timing-function: all;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    }
+}
+
+@keyframes carritomov {
+    0% {
+        transform: translate(-80px);
+    }
+    100% {
+        transform: translate(80px);
+    }
+}
+
+.pasos_titulo2 {
+    @include flex-column-center;
+    margin: calc($separacion - 8rem);
+    text-align: center;
+    
+}
+
+.pasos-desc {
+    text-align: end;
+    margin-top: calc($separacion - 8rem);
+    justify-content: center;
+    justify-items: center;
+    font-size: $fuente-chica;
+}
+
+.pasos-desc-fin {
+    text-align: end;
+    margin-top: calc($separacion - 8rem);
+    justify-content: center;
+    justify-items: center;
+    font-size: $fuente-grande;
+    background-color: gold;
+    border-radius: 10px;
+    padding: 2.5rem;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.pasos_num {
+    display: flex;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+    color: goldenrod;
+    border-radius: 100px;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+

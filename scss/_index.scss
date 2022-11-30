@@ -1,0 +1,108 @@
+/**PAGINA INICIO**/
+
+/*Banner*/
+#banner-inicio {
+    background-color: lightblue;
+    margin-top: calc($separacion - 8.5rem);
+    padding: 2rem;
+    color: black;
+    border-radius: 8px;
+    font-size: $fuente-chica;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.banners_caracteristicas {
+    @include flex-column-center;
+    
+    }
+
+.banners_caracteristicas img:hover {
+    transform: scale(1.08);
+}
+
+#banner-nosotros {
+    background-color: #eaeaea;
+    margin-top: calc($separacion - 8.5rem);
+    padding: 2rem;
+    color: black;
+    border-radius: 8px;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.imagen-inicio {
+    @include sizes (60rem, 30rem);
+}
+
+.parrafo_inicio {
+    font-size: $fuente-chica;
+
+}
+
+#ubic-google {
+    margin-top: calc($separacion - 8rem);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mapa{
+    width: 60%;
+}
+
+#horarios {
+    text-align: center;
+    margin-top: calc($separacion - 8rem);
+    border-radius: 8px;
+    font-size: $fuente-chica;
+}
+
+.titulo_ubicyhorario {
+    background-color: crimson;
+    color: whitesmoke;
+    margin-bottom: calc($separacion - 8rem);
+}
+
+.contenedor-opciones {
+    @include flex-column-center;
+}
+
+.contenedor-labels {
+    display: flex;
+    gap: 30px;
+}
+
+.boton-saber {
+    @extend .botones-general;
+    background-color: crimson;
+}
+
+.contenedor-labels label {
+    @extend .botones-general;
+    margin-top: calc($separacion - 9rem);
+    margin-bottom: calc($separacion - 9rem);
+    background-color: gray;
+}
+
+.contenedor-botones a {
+    display: none;
+}
+
+#sitio-web,
+#whatsapp {
+    display: none;
+}
+
+#sitio-web:checked ~ .contenedor-botones .web{
+    display: block;
+}
+
+#whatsapp:checked ~ .contenedor-botones .wapp{
+    display: block;
+}
+

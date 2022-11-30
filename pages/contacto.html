@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="contacto, puntos, descuentos, referencia, código">
+    <meta name="description" content="Contactate con nosotros y referencia a nuevos clientes.">
+    <!--LINK CSS DE BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--PESTANA-->
+    <link rel="shortcut icon" href="../img/carrito.png" alt="La Venderia">
+    <!--Animaciones-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>LA VENDERIA | Contacto</title>
+</head>
+<body id="grilla_contacto">
+    <header id="grilla_header">
+        <!--Menu de navegacion bootstrap-->
+        <nav class="navbar navbar-expand-lg lead w-100">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/carrito.png" alt="Logo de La Venderia" class="logo">
+            </a>
+            <div class="ubicacion-h1">
+                <h1>Tu contacto</h1>
+            </div>
+            <button class="navbar-toggler color-boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link texto-menu" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link texto-menu" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link texto-menu" href="novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active texto-menu" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link texto-menu" href="comerciales.html">Comprar</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <section id="formulario" class="borde_formulario">
+        <div class="container">
+            <div class= "row d-flex justify-content-center">
+                <div class="contenedor-form col-6 col-md-4">
+                    <form>
+                        <fieldset class="fondo_form">
+                        <legend class="leyenda_form">FORMULARIO DE CONTACTO</legend>
+                        <p class="leyenda_form1">Datos personales</p>
+                        <div class="d-flex justify-content-center">
+                            <label for="nombre"></label>
+                            <input type="text" id="nombre" required placeholder="Nombre">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <label for="apellido"></label>
+                            <input type="text" id="apellido" required placeholder="Apellido">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <label for="email"></label>
+                            <input type="email" id="email" required placeholder="Correo electrónico">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <label for="Contrasena"></label>
+                            <input type="password" id="Contrasena" required placeholder="Contraseña">
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="leyenda_form1">Indica la ubicacion de tu local</p>
+                            <label for="cbacap" class="leyenda_form2">Cba capital</label>
+                            <input type="radio" name="ubicacion" id="cbacap">
+                            <label for="intcba" class="leyenda_form2">Interior de Cba</label>
+                            <input type="radio" name="ubicacion" id="intcba">
+                            <label for="restopais" class="leyenda_form2">Resto del país</label>
+                            <input type="radio" name="ubicacion" id="restopais">
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="leyenda_form1">Indica preferencia de entrega</p>
+                            <label for="directodom" class="leyenda_form2">Directo a tu domilicio</label>
+                            <input type="checkbox" id="directodom">
+                            <label for="retirodecorreo" class="leyenda_form2">Retiro de correo cercano</label>
+                            <input type="checkbox" id="retirodecorreo">
+                            <label for="retirovenderia" class="leyenda_form2">Retiro en LA VENDERIA</label>
+                            <input type="checkbox" id="retirovenderia">
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="leyenda_form1">¿Deseas recibir nuestro catálogo actualizado?</p>
+                            <label for="select" class="leyenda_form2">Selecciona una opción</label>
+                            <select id="select">
+                            <option class="leyenda_form2">si</option>
+                            <option class="leyenda_form2">no</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div>
+                            <p class="leyenda_form1">Nos interesa tu consulta, dejanos tu mensaje:</p>
+                            <textarea id="mensaje" cols="60" rows="10" maxlength="10" class="col-12 col-md-12 col-lg-12"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar formulario" class="leyenda_form2">
+                            <input type="reset" value="Limpiar Formulario" class="leyenda_form2">
+                        </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="contenedor-each-maps col-6 col-md-4">
+                    <h2 class="clase-referencia">¡Recomendanos y gana!</h2>
+                    <p class="parraforef mt-5">Suma puntos referenciando a alguien que se convierta en nuestro cliente y accede a descuentos y promociones únicas.</p>
+                    <div class="container">
+                        <div class="row d-flex justify-content-center col-6 col-md-6 col-lg-6">
+                            <div class="botoncod text-center bg-secondary text-center mt-4 mb-2">tu código</div>
+                            <div class="botoncopiar ext-center bg-danger text-center mb-4">COPIAR</div>
+                        </div>
+                    </div>
+                    <P class="parraforef mt-4 mb-4">Comparte tu código en las siguientes redes:</P>
+                    <div class="container">
+                        <div class="row col-6">      
+                            <button class="btn--instagram mb-2 efecto-each">instagram</button>
+                            <button class="btn--facebook mb-2 efecto-each">facebook</button>
+                            <button class="btn--twiter mb-2 efecto-each">twitter</button>
+                            <button class="btn--whatsapp mb-2 efecto-each">whatsapp</button>
+                            <button class="btn--sendmail mb-2 efecto-each">send-mail</button>
+                        </div>
+                            <p class="parraforef2 m-4">(*)Si alguien se registra indicando tu código, tendrás un descuento del 20% en tu próxima compra.</p>                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="text-center">
+        <!--ESPACIO PARA BANNERS-->
+        <section id="banner-footer" class="container">
+            <div class="padre-banners row">
+                <!--Banner1-->
+                    <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                    <img src="../img/carrito.png" alt="carrito" class="logo-footer">
+                    </div>
+                <!--Banner2-->
+                    <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                        <h3 class="h3-footer">Mapa del sitio</h3>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link texto-menu-footer" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link texto-menu-footer" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active texto-menu-footer" href="novedades.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link texto-menu-footer" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link texto-menu-footer" href="comerciales.html">Comprar</a>
+                            </li>
+                            </ul>
+                    </div>
+                <!--Banner3-->
+                    <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                        <h3 class="h3-footer">Mi cuenta</h3>
+                        <ul>
+                            <li class="lista_footer">
+                                <a>Ingresar</a>
+                            </li>
+                            <li class="lista_footer">
+                                <a>Registrarme</a>
+                            </li>
+                        </ul>
+                    </div>
+                <!--Banner4-->
+                    <div class="banners_caracteristicas col-12 col-md-6 col-lg-3">
+                        <div>
+                        <h3 class="h3-footer">Datos de contacto</h3>
+                        <ul>
+                            <li class="lista_footer">
+                                <a>email: info@lavenderia.com.ar</a>
+                            </li>
+                            <li class="lista_footer">
+                                <a>cel.: 0054 351 1234567</a>
+                            </li>
+                            <li class="lista_footer">
+                                <a>ubic.: Av. Colón y General Paz Cba cap.</a>
+                            </li>
+                        </ul>
+                        </div>
+                    <div class="icon-redes">
+                    <!--instagram-->
+                    <div class="banners_caracteristicas col-6 col-md-6 col-lg-6">
+                        <img src="../img/instagram.png" alt="instagram" class="img_redes">
+                    </div>
+                    <!--facebook-->
+                    <div class="banners_caracteristicas col-6 col-md-6 col-lg-6">
+                        <img src="../img/facebook.png" alt="facebbok" class="img_redes">
+                    </div>
+                    <!--twiter-->
+                    <div class="banners_caracteristicas col-6 col-md-6 col-lg-6">
+                    <img src="../img/twiter.png" alt="twiter" class="img_redes">
+                    </div>
+                    <!--whatsapp-->
+                    <div class="banners_caracteristicas col-6 col-md-6 col-lg-6">
+                        <img src="../img/whatsapp.png" alt="whatsapp" class="img_redes">
+                    </div>
+                    </div>
+            </div>
+        </section>
+        <section>
+            <p class="footer_leyenda">Sitio realizado sólo con fines educativos. Todos los derechos reservados de Maria Juan Martínez.</p> 
+        </section> 
+    </footer>
+        <!--LINK JS DE BOOTSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!--Animaciones-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

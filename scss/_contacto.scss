@@ -1,0 +1,77 @@
+/**PAGINA CONTACTO**/
+
+.leyenda_form {
+    font-size: $fuente-mediana;
+    font-weight: bold;
+}
+
+.leyenda_form1 {
+    font-size: $fuente-chica;
+    margin: calc($separacion - 8.5rem);
+}
+
+.leyenda_form2 {
+    font-size: $fuente-xchica;
+}
+#nombre{
+    font-size: $fuente-xchica;
+}
+
+#apellido{
+    font-size: $fuente-xchica;
+}
+
+#Contrasena{
+    font-size: $fuente-xchica;
+}
+
+#email{
+    font-size: $fuente-xchica;
+}
+
+.fondo_form {
+    
+    background-color: gray;
+    padding: 1rem;
+    border-radius: 10px;
+    color: whitesmoke;
+    
+}
+
+input:focus {
+    width: 300px;
+    outline: none;
+}
+
+.contenedor-form {
+    margin: calc($separacion / 2);
+    
+}
+
+.contenedor-each-maps {
+    margin: calc($separacion / 2);
+}
+
+.botoncod, .botoncopiar {
+    @extend .botones-general;
+
+    &:hover{
+        transform: scale(0.7);
+    }
+}
+
+.efecto-each:hover {
+    transform: scale(0.7);
+}
+
+.parraforef {
+    font-size: $fuente-chica;
+}
+
+.parraforef2 {
+    font-size: $fuente-xchica;
+}
+
+.funcional {
+    background-color: red;
+}

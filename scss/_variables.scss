@@ -1,0 +1,33 @@
+/*Variable para colores y fuentes*/
+$bg-body: white; 
+$fuente-grande: 2.5rem;
+$fuente-mediana: 2rem;
+$fuente-chica: 1.5rem;
+$fuente-xchica: 1.2rem;
+$fuente-xxchica: 0.9rem;
+
+/*Variable para mediaquerys*/
+$pantalla-xs: 400px;
+$pantalla-chica: 523px;
+$pantalla-mediana: 780px;
+$pantalla-grande: 1100px;
+$pantalla-xg: 1200px;
+
+/*Mixins*/
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Mixins con parámetros*/
+@mixin sizes($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+    
+/*Operaciones*/
+$separacion: 10rem;
+
+/*Variable para promociones especiales*/
+$evento: normal;
