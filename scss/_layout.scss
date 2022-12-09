@@ -6,18 +6,6 @@
     background-color: crimson;
 } 
 
-@media screen and (max-width: $pantalla-mediana) {
-    #grilla_header {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: $pantalla-chica) {
-    #lista_navegacion {
-        flex-direction: column;
-    }
-}
-
 .logo {
     @include sizes (10rem, 10rem);
     border-radius: 8px;

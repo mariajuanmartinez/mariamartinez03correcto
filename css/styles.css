@@ -134,16 +134,6 @@ body {
   background-color: crimson;
 }
 
-@media screen and (max-width: 780px) {
-  #grilla_header {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 523px) {
-  #lista_navegacion {
-    flex-direction: column;
-  }
-}
 .logo {
   width: 10rem;
   height: 10rem;
@@ -343,23 +333,6 @@ body {
   justify-items: center;
 }
 
-@media screen and (max-width: 1100px) {
-  .galeria_productos {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 780px) {
-  .galeria_productos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 523px) {
-  .galeria_productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .card_prod {
   display: flex;
   flex-direction: column;
@@ -368,7 +341,7 @@ body {
   height: 38rem;
   border-radius: 20px;
   padding: 1.5rem;
-  background-color: white;
+  background-color: lightgrey;
   margin: 1rem;
   justify-content: center;
 }
@@ -599,6 +572,164 @@ input:focus {
 }
 .pasos_num:hover {
   transform: scale(1.1);
+}
+
+/*Media queries*/
+/*Layout*/
+@media screen and (max-width: 780px) {
+  #grilla_header {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 523px) {
+  #lista_navegacion {
+    flex-direction: column;
+  }
+}
+/*Inicio*/
+@media screen and (max-width: 400px) {
+  #banner-inicio {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mediabannerinicioh2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mediabannerinicioh3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .titulo_ubicyhorario {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .menu-nav {
+    font-size: 1.6rem;
+  }
+}
+/*Productos*/
+@media screen and (max-width: 1100px) {
+  .galeria_productos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 780px) {
+  .galeria_productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 523px) {
+  .galeria_productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .media-prod-h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .media-prod-parr {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card_prod {
+    transform: scale(0.8);
+    margin: -4rem;
+  }
+}
+@media screen and (max-width: 230px) {
+  .card_prod {
+    transform: scale(0.6);
+    margin: -8rem;
+  }
+}
+@media screen and (max-width: 175px) {
+  .card_prod {
+    transform: scale(0.5);
+    margin: -8rem;
+  }
+}
+@media screen and (max-width: 175px) {
+  .media-tienda-h1 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #footer {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .h3-footer {
+    font-size: 1.2rem;
+  }
+}
+/*Novedades*/
+@media screen and (max-width: 400px) {
+  .media-nov-h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .media-nov-parr {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tn1 {
+    font-size: 1.5rem;
+  }
+}
+/*Contacto*/
+@media screen and (max-width: 400px) {
+  .leyenda_form {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .leyenda_form1 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .leyenda_form2 {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .clase-referencia {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .efecto-each {
+    font-size: 0.56rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .botoncod {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .botoncopiar {
+    font-size: 0.6rem;
+  }
+}
+/*Comerciales*/
+@media screen and (max-width: 400px) {
+  .pasos-desc-fin {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,241 @@
+/*Media queries*/
+
+/*Layout*/
+
+@media screen and (max-width: $pantalla-mediana) {
+    #grilla_header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: $pantalla-chica) {
+    #lista_navegacion {
+        flex-direction: column;
+    }
+}
+
+/*Inicio*/
+
+@media screen and (max-width: $pantalla-xs) {
+    #banner-inicio {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .mediabannerinicioh2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .mediabannerinicioh3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .titulo_ubicyhorario {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .menu-nav {
+        font-size: 1.6rem;
+    }
+}
+
+
+/*Productos*/
+@media screen and (max-width: $pantalla-grande) {
+    .galeria_productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: $pantalla-mediana) {
+    .galeria_productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: $pantalla-chica) {
+    .galeria_productos {
+        @include flex-column-center;
+        
+    }
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .media-prod-h2 {
+        font-size: 1.5rem;
+        
+    }
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .media-prod-parr {
+        font-size: 1.5rem;
+        
+    }
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .card_prod {
+        transform: scale(0.8);
+        margin: calc($separacion - 14rem);
+    }
+}
+
+@media screen and (max-width: 230px) {
+    .card_prod {
+        transform: scale(0.6);
+        margin: calc($separacion - 18rem);
+    }
+}
+
+@media screen and (max-width: 175px) {
+    .card_prod {
+        transform: scale(0.5);
+        margin: calc($separacion - 18rem);
+    }
+    
+}
+
+@media screen and (max-width: 175px) {
+    .media-tienda-h1 {
+        font-size: 1rem;
+        
+    }
+    
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    #footer {
+        font-size: 1rem;
+        
+    }
+    
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .h3-footer {
+        font-size: 1.2rem;
+        
+    }
+    
+}
+
+/*Novedades*/
+
+@media screen and (max-width: $pantalla-xs) {
+    .media-nov-h2 {
+        font-size: 1.5rem;
+        
+    }
+    
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .media-nov-parr {
+        font-size: 1.5rem;
+        
+    }
+    
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .tn1 {
+        font-size: 1.5rem;
+        
+    }
+    
+}
+
+/*Contacto*/
+
+@media screen and (max-width: $pantalla-xs) {
+    .leyenda_form
+    {
+        font-size: $fuente-xchica;
+        
+    }
+    
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .leyenda_form1
+    {
+        font-size: $fuente-xchica;
+        
+    }
+    
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .leyenda_form2
+    {
+        font-size: $fuente-xxchica;
+        
+    }
+    
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .clase-referencia
+    {
+        font-size: $fuente-xchica;
+        
+    }
+    
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .efecto-each
+    {
+        font-size: 0.56rem;
+        
+    }
+    
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .botoncod
+    {
+        font-size: 0.6rem;
+        
+    }
+    
+}
+
+@media screen and (max-width: $pantalla-xs) {
+    .botoncopiar
+    {
+        font-size: 0.6rem;
+        
+    }
+    
+}
+
+
+/*Comerciales*/
+
+@media screen and (max-width: $pantalla-xs) {
+    .pasos-desc-fin
+    {
+        font-size: 1rem;
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+

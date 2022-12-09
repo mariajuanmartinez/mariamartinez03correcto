@@ -22,32 +22,12 @@
     justify-items: center;
 }
 
-
-@media screen and (max-width: $pantalla-grande) {
-    .galeria_productos {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media screen and (max-width: $pantalla-mediana) {
-    .galeria_productos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: $pantalla-chica) {
-    .galeria_productos {
-        @include flex-column-center;
-        
-    }
-}
-
 .card_prod{
     @include flex-column-center;
     @include sizes (28rem, 38rem);
     border-radius: 20px;
     padding: 1.5rem;
-    background-color: white;
+    background-color: lightgrey;
     margin: calc($separacion - 9rem);
     justify-content: center;
 
@@ -57,7 +37,7 @@
 
     img {
     @include sizes (28rem, 18rem);
-
+    
     }
 }
 
